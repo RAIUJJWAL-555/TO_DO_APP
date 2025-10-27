@@ -1,78 +1,191 @@
-/* Basic CSS for addTask component */
+/* Enhanced CSS for addTask component */
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    /* min-height: 100vh; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
 }
-.main-box{
+
+.main-box {
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+}
 
+.p1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
 }
-.p1{
-    margin-top: 20px;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-.input-container{
+
+.input-container {
     display: flex;
     justify-content: center;
-}
-.input-box{
-    border-radius: 4px;
-    width: 290px;
-    border: 1px solid black;
-    border-radius: 8px 0px 0px 8px;
-}
-.add-btn{
-    border-radius: 0px 8px 8px 0px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    overflow: hidden;
 }
 
-.task-list{
+.input-box {
+    width: 300px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 50px 0 0 50px;
+    transition: all 0.3s ease;
+}
+
+.input-box:focus {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+}
+
+.add-btn {
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0 50px 50px 0;
+}
+
+.add-btn:hover {
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.task-list {
     display: flex;
     justify-content: space-between;
-    width: 367px;
-    margin-top: 10px;
-    margin-left: 9px;
-    border: 1px solid black;
-    border-radius: 8px 8px 8px 8px;
+    align-items: center;
+    width: 400px;
+    margin: 10px 0;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.cheakbox{
-    height: 10px;
-    width:  10px;
-    margin-left: 20px;
+
+.task-list:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
-.task-list-btn{
-    background-color: white;
-    color: red;
+
+.cheakbox {
+    height: 18px;
+    width: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+    accent-color: #4ecdc4;
+    transform: scale(1.2);
+}
+
+.task-list-btn {
+    background: linear-gradient(45deg, #ff4757, #ff3838);
+    color: white;
     border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(255, 71, 87, 0.3);
+}
+
+.task-list-btn:hover {
+    background: linear-gradient(45deg, #ff3838, #ff4757);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
 }
 
 
-/* Basic CSS for completed component */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    /* min-height: 100vh; */
-}
-.com-main-box{
-    background-color: rgb(214, 239, 214);
-    width: 450px;
-    margin-top: 50px;
+/* Enhanced CSS for completed component */
+
+.com-main-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.completed-list{
-    margin-top: 10px;
-    width: 367px;
-    border-radius: 8px;
+
+.completed-list {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed-list:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
+}
+
+.completed-list button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.completed-list button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
 }
