@@ -76,6 +76,12 @@ app.delete('/api/tasks/:id', async (req, res) => {
   }
 });
 
+// New welcome endpoint with logging
+app.get('/api/welcome', (req, res) => {
+  console.log(`Request: ${req.method} ${req.path}`);
+  res.json({ message: 'Welcome to the TO-DO API Service!' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

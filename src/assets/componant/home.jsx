@@ -1,6 +1,6 @@
 import { Link, Outlet} from 'react-router-dom';
 import React,{useState} from 'react'
-import './Home.css'
+import '../componant/home.css'
 
 
 
