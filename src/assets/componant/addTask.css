@@ -1,0 +1,78 @@
+/* Basic CSS for addTask component */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* min-height: 100vh; */
+}
+.main-box{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.p1{
+    margin-top: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    border-radius: 4px;
+    width: 290px;
+    border: 1px solid black;
+    border-radius: 8px 0px 0px 8px;
+}
+.add-btn{
+    border-radius: 0px 8px 8px 0px;
+}
+
+.task-list{
+    display: flex;
+    justify-content: space-between;
+    width: 367px;
+    margin-top: 10px;
+    margin-left: 9px;
+    border: 1px solid black;
+    border-radius: 8px 8px 8px 8px;
+}
+.cheakbox{
+    height: 10px;
+    width:  10px;
+    margin-left: 20px;
+}
+.task-list-btn{
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+
+/* Basic CSS for completed component */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* min-height: 100vh; */
+}
+.com-main-box{
+    background-color: rgb(214, 239, 214);
+    width: 450px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.completed-list{
+    margin-top: 10px;
+    width: 367px;
+    border-radius: 8px;
+}

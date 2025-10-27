@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100px;
+    margin-right: 550px;
+    /* background-color: red; */
+}
+.inbox-content{
+    height: 100vh;
+    width: 88vw;
+    background-color: rgb(242, 240, 245);
+    margin-left: 12%;
+}
+.inbox-content.collapsed1{
+    width: 95vw;
+}
+.div1 {
+    /* background-color: red; */
+    color: black;
+    padding: 20px;
+  }
+  
+  .div2 {
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: bisque;
+    padding: 10px;
+  }
+  
